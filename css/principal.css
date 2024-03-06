@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url("/imagenes/marmolB.jpg");
+  background-image: url("imagenes\fondoMadera.png");
 
   background-size: cover;
   color: var(--negro);
