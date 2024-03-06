@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Curlz';
 
-  src: url('/fonts/Curlz.otf');
+  src: url('/fonts/Curlz.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url("imagenes\fondoMadera.png");
+  background-image: url("/imagenes/marmolB.jpg");
 
   background-size: cover;
   color: var(--negro);
