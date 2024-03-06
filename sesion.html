@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looking for food</title>
+    <link rel="shortcut icon" href="imagenes/LogoL.jpeg" />
+    <link rel="stylesheet" href="css/sesion.css" />
+    
+</head>
+
+<body>
+    <div class="inicioSesion">
+        <h1>
+            <strog>INICIO DE SESION</strog>
+        </h1><br>
+        <form action="dashboard.html">
+            <div class="usuario">
+                <label>Nombre de usuario</label><br>
+                <input type="text" id="Usuario" placeholder="Usuario" required>
+            </div><br>
+            <div class="password">
+                <label>Contraseña</label><br>
+                <input type="password" id="Password" placeholder="Contraseña" pattern="{7,25}"
+                    title="Mínimo 7 caractéres" required>
+            </div><br>
+            <div calss="recordar"><a href="#">¿Olvidó su contraseña?</a></div><br>
+            <input type="submit" value="Iniciar"><br><br>
+            <div class="registrar">
+                <a href="Registrar.html">
+                    <input type="button" value="Crear cuenta nueva">
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
