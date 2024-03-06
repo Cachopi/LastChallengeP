@@ -66,7 +66,7 @@ body {
   padding: 0;
 
   background-image: url("/imagenes/marmolB.jpg");
- 
+
   background-size: cover;
   color: var(--negro);
 }
@@ -92,7 +92,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding : 10px;
+  padding: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
 }
@@ -105,84 +105,87 @@ header img {
 
 }
 
-header h1{
+header h1 {
   position: absolute;
-  
-  
+
+
 }
-nav{
+
+nav {
   position: absolute;
-left: 5%;
-top: 40%;
+  left: 5%;
+  top: 40%;
 
 }
 
 
 
 nav ul {
-	padding: 0;
-	list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 nav li {
-	font-size: 25px;
-	width: 8em;
-	height: 2em;
-	color: var(--naranja);
-	border-left: 0.08em solid;
-	position: relative;
-	margin-top: 0.8em;
-	cursor: pointer;
+  font-size: 25px;
+  width: 8em;
+  height: 2em;
+  color: var(--naranja);
+  border-left: 0.08em solid;
+  position: relative;
+  margin-top: 0.8em;
+  cursor: pointer;
 }
+
 nav li span {
-	text-decoration: none;
-	color: var(--naranja);
+  text-decoration: none;
+  color: var(--naranja);
 }
- a:hover {
+
+a:hover {
   text-decoration: none;
 }
 
 nav li::before,
 nav li::after {
-	content: '';
-	position: absolute;
-	width: inherit;
-	border-left: inherit;
-	z-index: -1;
+  content: '';
+  position: absolute;
+  width: inherit;
+  border-left: inherit;
+  z-index: -1;
 }
 
- nav li::before {
-	height: 80%;
-	top: 10%;
-	left: calc(-0.15em - 0.08em * 2);
-	filter: brightness(0.8);
+nav li::before {
+  height: 80%;
+  top: 10%;
+  left: calc(-0.15em - 0.08em * 2);
+  filter: brightness(0.8);
 }
 
 nav li::after {
-	height: 60%;
-	top: 20%;
-	left: calc(-0.15em * 2 - 0.08em * 3);
-	filter: brightness(0.6);
+  height: 60%;
+  top: 20%;
+  left: calc(-0.15em * 2 - 0.08em * 3);
+  filter: brightness(0.6);
 }
 
 nav li span {
-	position: relative;
-	height: 120%;
-	top: -10%;
-	box-sizing: border-box;
-	border: 0.08em solid;
-	background-color: var(--negro);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Satisfy', cursive;
-	text-transform: capitalize;
-	transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
-	transition: 0.3s;
+  position: relative;
+  height: 120%;
+  top: -10%;
+  box-sizing: border-box;
+  border: 0.08em solid;
+  background-color: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Satisfy', cursive;
+  text-transform: capitalize;
+  transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+  transition: 0.3s;
 }
 
 nav li:hover span {
-	transform: translateX(0.15em);
+  transform: translateX(0.15em);
 }
 
 
@@ -231,7 +234,7 @@ footer a {
   align-items: center;
   justify-content: center;
   animation: fadeIn 0.5s ease;
- 
+
 }
 
 
@@ -252,11 +255,11 @@ footer a {
   opacity: 0;
   animation: fadeIn 0.5s ease forwards;
 
-top: 18%;
-left: 25%;
+  top: 18%;
+  left: 25%;
 
 
- 
+
 }
 
 
@@ -276,7 +279,7 @@ left: 25%;
   top: -120px;
   border-radius: 50%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.644);
- 
+
 }
 
 
@@ -345,7 +348,8 @@ h2 {
 
 
 }
-#reloj{
+
+#reloj {
 
   font-size: 20px;
 }

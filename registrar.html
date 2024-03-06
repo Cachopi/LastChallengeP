@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="shortcut icon" href="imagenes/LogoL.jpeg" />
     <link rel="stylesheet" href="/css/sesion.css">
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("registro").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Obtener valores de los campos de entrada         
+                var usuario = document.getElementById("Usuario").value;
+                var password = document.getElementById("Password").value;
+                var confirmarPassword = document.getElementById("ConfirmarPassword").value;
+
+                // Verificar que las contraseñas coincidan
+                if (password !== confirmarPassword) {
+                    alert("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
+                    return;
+                }
+
+                // Almacenar los datos en sessionStorage
+
+                sessionStorage.setItem("usuario", usuario);
+                sessionStorage.setItem("password", password);
+
+                // Redirigir a la página de inicio de sesión
+                window.location.href = "sesion.html";
+            });
+        });
+
+    </script>
 </head>
+
 <body>
     <div class="inicioSesion">
         <h1>Crear cuenta</h1>
-        <form action="dashboard.html">
+        <form id="registro">
             <div class="correo">
                 <label>Correo electrónico</label><br>
                 <input type="text" id="Correo" placeholder="Correo" required>
@@ -23,10 +53,13 @@
                 <label>Contraseña</label><br>
                 <input type="password" id="Password" placeholder="Contraseña" required><br><br>
                 <label>Confirma contraseña</label><br>
-                <input type="password" id="Password" placeholder="Contraseña" required>
+                <input type="password" id="ConfirmarPassword" placeholder="Contraseña" required>
             </div><br>
-            <input type="submit" value="Registrar">
+            <button type="submit">Registrar</button>
         </form>
     </div>
+
+
 </body>
+
 </html>

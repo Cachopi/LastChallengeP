@@ -7,7 +7,44 @@
     <title>Looking for food</title>
     <link rel="shortcut icon" href="imagenes/LogoL.jpeg" />
     <link rel="stylesheet" href="css/sesion.css" />
-    
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var username = document.getElementById("Usuario");
+            var password = document.getElementById("Password");
+            document.getElementById("login").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+
+                var userg = sessionStorage.getItem("usuario");
+                var passguardado = sessionStorage.getItem("password");
+
+
+                if (username.value === userguardado && password.value === passguardado) {
+
+
+
+                    window.location.href = "dashboard.html";
+                } else {
+                    alert("usuario o contraseña invalidos.");
+                }
+            });
+
+
+            var userguardado = sessionStorage.getItem("usuario");
+            var passguardado = sessionStorage.getItem("password");
+
+            if (userguardado != null && passguardado != null) {
+
+                username.value = userguardado;
+                password.value = passguardado;
+
+            }
+        });
+    </script>
+
 </head>
 
 <body>
@@ -15,7 +52,7 @@
         <h1>
             <strog>INICIO DE SESION</strog>
         </h1><br>
-        <form action="dashboard.html">
+        <form id="login">
             <div class="usuario">
                 <label>Nombre de usuario</label><br>
                 <input type="text" id="Usuario" placeholder="Usuario" required>
@@ -35,5 +72,7 @@
         </form>
     </div>
 </body>
+
+
 
 </html>
