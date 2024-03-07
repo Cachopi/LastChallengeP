@@ -12,6 +12,7 @@ $(document).ready(function () {
     var description = $(this).find("p").text();
     var ingredientes = $(this).find("#ingredientes").html();
     var pasos = $(this).find("#pasos").html();
+    var url = $(this).find("#url").html();
     console.log(pasos);
 
 
@@ -22,6 +23,18 @@ $(document).ready(function () {
     $("#recipeIngredientes").html(ingredientes);
     $("#recipePasos").html(pasos);
 
+    //mostrar url derechos img
+    $("#recipeImage").mouseover(function () {
+      $("#urld").remove();
+      // Agregar un div al footer
+      $("footer").append(`<div id="urld">${url}</div>`);
+    });
+
+    // Evento de mouseout en el body
+    $("#recipeImage").mouseout(function () {
+      // Eliminar el div del footer
+      $("#urld").remove();
+    });
 
     //mosterat derechos ingredientes
     $("#recipeIngredientes").mouseover(function () {
@@ -37,7 +50,6 @@ $(document).ready(function () {
     });
 
     //mostrar derechos descripcion
-    //mosterat derechos ingredientes
     $("#recipePasos").mouseover(function () {
       $("#des").remove();
       // Agregar un div al footer
@@ -97,7 +109,9 @@ contenedores.forEach((item, index) => {
 
   tooltip.id = 'tooltip';
   tooltip.textContent = textos[index]; // Usa el índice para obtener el texto correspondiente
+
   $("footer").append(tooltip);
+
 
   item.addEventListener('mouseover', () => {
     tooltip.style.display = 'block';
@@ -107,7 +121,6 @@ contenedores.forEach((item, index) => {
     tooltip.style.display = 'none';
   });
 
-  // Fotografia de Industrystandarddesing https://industrystandarddesign.com/is-polished-porcelain-tile-good-for-kitchen-floors/
 
 
 });

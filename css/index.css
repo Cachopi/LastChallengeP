@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 footer {
   margin-top: 300px;
   background-color: rgba(255, 255, 255, 0.932);
@@ -19,13 +20,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 img {
   padding: 20px;
   width: 200px;
 }
+
 img:hover {
   filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
 }
+
 h1 {
   font-size: 100px;
   color: white;

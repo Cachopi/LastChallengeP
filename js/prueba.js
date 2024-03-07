@@ -1,20 +1,9 @@
-
-$(document).ready(function() {
-   
-
-  
-    $("button").click(function(){
+//animacion index
+$(document).ready(function () {
+    $("button").click(function () {
         $("header").addClass("open");
-     
-      
-        setTimeout(function() {
-
-
-                  
-                    window.location.replace('principal.html');
-               
-              
-                   
-                }, 1000);
+        setTimeout(function () {
+            window.location.replace('principal.html');
+        }, 1000);
     });
 });
